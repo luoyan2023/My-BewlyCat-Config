@@ -343,7 +343,7 @@
     },
     {
       "page": "Weekly",
-      "visible": true
+      "visible": false
     },
     {
       "page": "Precious",
