@@ -122,10 +122,8 @@
   "autoHideTopBar": false,
   "showLayoutEditButton": true,
   "videoPageTopBarConfig": "alwaysShow",
-  "alwaysUseTransparentTopBar": false,
-  "alwaysUseFrostedGlassTopBar": false,
-  "enableTopBarGradient": false,
-  "showTopBarThemeColorGradient": true,
+  "topBarStyle": "default",
+  "showTopBarThemeColorGradient": false,
   "showBewlyOrBiliPageSwitcher": false,
   "showBewlyOrBiliPageSwitcherOnMorePages": false,
   "topBarLogoStyle": "icon",
@@ -176,6 +174,11 @@
       "badgeType": "none",
       "key": "avatar",
       "visible": true
+    },
+    {
+      "badgeType": "none",
+      "key": "topBarSwitcher",
+      "visible": true
     }
   ],
   "topBarPinnedChannels": [],
@@ -194,12 +197,13 @@
   "momentsSidebarShowUserCard": true,
   "momentsSidebarShowPublish": true,
   "momentsSidebarShowLive": true,
+  "momentsSidebarShowHotSearch": true,
   "momentsShowUpList": true,
   "momentsTabsPosition": "left",
   "momentsEnableLivePreview": true,
   "momentsEnableVideoPreview": true,
-  "momentsGridColumns": "3",
-  "momentsEnableWantedFilter": true,
+  "momentsGridColumns": "2",
+  "momentsEnableWantedFilter": false,
   "momentsFilterUpRecommendation": true,
   "momentsHideChargeExclusive": true,
   "momentsHideVideoReservation": false,
@@ -214,6 +218,7 @@
   "momentsEnableKeywordFilter": false,
   "momentsBlockedKeywords": "",
   "momentsCardOpenMode": "dialog",
+  "momentsVideoCardOpenMode": "inherit",
   "alwaysUseDock": false,
   "autoHideDock": true,
   "halfHideDock": false,
@@ -303,6 +308,7 @@
   "searchResultsPaginationMode": "scroll",
   "recommendationMode": "web",
   "autoSwitchRecommendationMode": true,
+  "showRecommendationFilterRiskWarning": true,
   "disableFilterForFollowedUser": false,
   "filterOutVerticalVideos": false,
   "enableFilterByViewCount": false,
@@ -311,8 +317,13 @@
   "filterByLikeCount": 1000,
   "enableFilterByDuration": false,
   "filterByDuration": 3600,
-  "enableFilterByTitle": false,
-  "filterByTitle": [],
+  "enableFilterByTitle": true,
+  "filterByTitle": [
+    {
+      "keyword": "太奶",
+      "remark": ""
+    }
+  ],
   "enableFilterByUser": false,
   "filterByUser": [],
   "enableFilterByPublishTime": false,
@@ -322,8 +333,6 @@
   "followingFilterDynamicVideos": false,
   "useFollowingNewLayout": false,
   "collectedSeasonPlayAllMode": "beginning",
-  "enableFollowingInactiveBlacklist": false,
-  "followingInactiveDays": 100,
   "homePageTabVisibilityList": [
     {
       "page": "ForYou",
@@ -362,7 +371,7 @@
   "alwaysShowTabsOnHomePage": false,
   "fixedHomeTabsOnHomePage": true,
   "enableVersionReminder": true,
-  "lastAcknowledgedVersion": "1.7.5",
+  "lastAcknowledgedVersion": "1.7.7",
   "homeAdaptiveTitleFontSize": 16,
   "homeAdaptiveTitleAutoSize": true,
   "videoCardTitleFontSize": "base",
@@ -389,12 +398,14 @@
   "preserveForYouState": false,
   "rememberNoCookieRecommendationState": true,
   "adaptToOtherPageStyles": true,
-  "showTopBar": true,
+  "enableTopBar": true,
   "useOriginalBilibiliTopBar": false,
   "useOriginalBilibiliHomepage": false,
   "preventMobileRedirect": false,
   "defaultVideoPlayerMode": "default",
   "bewlyWidescreenSidebarPosition": "right",
+  "bewlyWidescreenSidebarPriority": "video",
+  "bewlyWidescreenCenterVerticalVideo": false,
   "defaultDanmakuState": "system",
   "defaultCaptionState": "off",
   "lastDanmakuState": true,
@@ -410,6 +421,7 @@
   "autoExitFullscreenOnEnd": true,
   "autoExitFullscreenExcludeAutoPlay": true,
   "showVerticalVideoZoomButton": true,
+  "showBewlyWidescreenButton": true,
   "showVideoScreenshotButton": false,
   "useBilibiliDefaultAutoPlay": true,
   "autoPlayMultipart": "autoPlay",
@@ -420,6 +432,10 @@
   "keyboard": false,
   "videoPlayerScroll": true,
   "shortcuts": {
+    "bewlyWidescreen": {
+      "enabled": true,
+      "key": "Shift+T"
+    },
     "caption": {
       "enabled": false,
       "key": "C"
@@ -532,5 +548,7 @@
   },
   "randomPlayMode": "manual",
   "minVideosForRandom": 5,
+  "enableFollowingInactiveBlacklist": false,
+  "followingInactiveDays": 100,
   "useFavoritesNewLayout": true
 }
