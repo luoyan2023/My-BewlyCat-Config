@@ -13,6 +13,7 @@
   "adjustCommentImageHeight": true,
   "hideCommentImageScrollbar": false,
   "enlargeFavoriteDialog": false,
+  "enableSidebarCoverBlur": true,
   "externalWatchLaterButton": true,
   "gridColumns": {
     "base": 1,
@@ -24,7 +25,8 @@
   },
   "autoSwitchListLayout": true,
   "autoSwitchListLayoutBreakpoint": 640,
-  "releaseOffscreenVideoCardImages": false,
+  "videoCardCoverRatioOneColumn": 40,
+  "videoCardCoverRatioTwoColumns": 50,
   "language": "cmn-CN",
   "customizeFont": "default",
   "fontFamily": "CJKEmDash, Numbers, Onest, ShangguSansSCVF, -apple-system, BlinkMacSystemFont, InterVariable, Inter, \"Segoe UI\", Cantarell, \"Noto Sans\", \"Roboto Flex\", Roboto, sans-serif, ui-sans-serif, system-ui, \"Apple Color Emoji\", \"Twemoji Mozilla\", \"Noto Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", emoji",
@@ -121,7 +123,7 @@
   ],
   "autoHideTopBar": false,
   "showLayoutEditButton": true,
-  "videoPageTopBarConfig": "alwaysShow",
+  "videoPageTopBarConfig": "showOnMouse",
   "topBarStyle": "default",
   "showTopBarThemeColorGradient": false,
   "showBewlyOrBiliPageSwitcher": false,
@@ -202,6 +204,10 @@
   "momentsTabsPosition": "left",
   "momentsEnableLivePreview": true,
   "momentsEnableVideoPreview": true,
+  "momentsEnableVideoControls": false,
+  "momentsEnableVideoPreviewSwipeSeek": false,
+  "momentsVideoPreviewDelayed": false,
+  "momentsOnlyCoverVideoPreview": true,
   "momentsGridColumns": "2",
   "momentsEnableWantedFilter": false,
   "momentsFilterUpRecommendation": true,
@@ -300,13 +306,14 @@
   "searchPageWallpaperMaskOpacity": 0,
   "searchPageWallpaperBlurIntensity": 0,
   "searchPageWallpaperCacheTime": 0,
-  "showHotSearchInTopBar": false,
+  "showHotSearchInTopBar": true,
   "showSearchRecommendation": true,
   "enableSearchHistory": true,
   "usePluginSearchResultsPage": true,
   "depersonalizeSearchResults": false,
   "searchResultsPaginationMode": "scroll",
   "recommendationMode": "web",
+  "showRecommendationModeSwitcher": false,
   "autoSwitchRecommendationMode": true,
   "showRecommendationFilterRiskWarning": true,
   "disableFilterForFollowedUser": false,
@@ -332,6 +339,7 @@
   "followingFilterChargingVideos": true,
   "followingFilterDynamicVideos": false,
   "useFollowingNewLayout": false,
+  "followingUploaderSort": "updated",
   "collectedSeasonPlayAllMode": "beginning",
   "homePageTabVisibilityList": [
     {
@@ -371,7 +379,7 @@
   "alwaysShowTabsOnHomePage": false,
   "fixedHomeTabsOnHomePage": true,
   "enableVersionReminder": true,
-  "lastAcknowledgedVersion": "1.7.7",
+  "lastAcknowledgedVersion": "1.7.10",
   "homeAdaptiveTitleFontSize": 16,
   "homeAdaptiveTitleAutoSize": true,
   "videoCardTitleFontSize": "base",
@@ -406,6 +414,7 @@
   "bewlyWidescreenSidebarPosition": "right",
   "bewlyWidescreenSidebarPriority": "video",
   "bewlyWidescreenCenterVerticalVideo": false,
+  "enableBewlyWidescreenSidebarResize": false,
   "defaultDanmakuState": "system",
   "defaultCaptionState": "off",
   "lastDanmakuState": true,
@@ -424,6 +433,7 @@
   "showBewlyWidescreenButton": true,
   "showVideoScreenshotButton": false,
   "useBilibiliDefaultAutoPlay": true,
+  "autoRemoveWatchLaterOnEnd": false,
   "autoPlayMultipart": "autoPlay",
   "autoPlayCollection": "autoPlay",
   "autoPlayRecommend": "autoPlay",
@@ -431,6 +441,7 @@
   "autoPlayPlaylist": "autoPlay",
   "keyboard": false,
   "videoPlayerScroll": true,
+  "videoPlayerScrollMode": "sendingBar",
   "shortcuts": {
     "bewlyWidescreen": {
       "enabled": true,
@@ -515,6 +526,10 @@
     "turnOffLight": {
       "enabled": false,
       "key": "I"
+    },
+    "videoScreenshot": {
+      "enabled": true,
+      "key": "Shift+S"
     },
     "videoTime": {
       "enabled": false,
